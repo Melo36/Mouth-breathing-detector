@@ -1,16 +1,29 @@
-# React + Vite
+# Mouth Breathing Detector
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A website that detects whether a person's mouth is open or closed. The goal is to detect whether the user is breathing through their mouth or their nose.
 
-Currently, two official plugins are available:
+Mouth breathing can be harmful when it becomes a regular habit because the nose is designed to filter, warm, and humidify the air before it reaches the lungs. Breathing through the mouth can dry out the mouth and throat, increase the risk of bad breath and dental problems, and reduce sleep quality by contributing to snoring or sleep apnea. In children, long-term mouth breathing may even affect facial development and posture. It can also lead to less efficient oxygen intake compared to nasal breathing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## System Architecture & Tech Stack
 
-## React Compiler
+This project is built as a lightweight, web-based computer vision application split into a clean client-server architecture:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend (Client-Side)
+* **HTML5:** Structures the layout, camera viewport, and dashboard overlay.
+* **JavaScript (ES6+):** Handles real-time video stream capture from the webcam, runs face/mouth tracking algorithms, and manages UI states.
 
-## Expanding the ESLint configuration
+### Backend (Server-Side)
+* **Node.js:** Powers the application server environment.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### How It Works (Architecture)
+1. **Capture:** The browser requests webcam permission via HTML5/JavaScript.
+2. **Detection:** Client-side JavaScript analyzes the facial/mouth geometry in real time to calculate if the mouth is open.
+3. **Processing/Logging:** The frontend communicates with the Node.js backend to handle server-side configurations or log detection events.
+
+
+Made with Claude Code.
+
+
+# Demo Video
+
+**[View Demo Video](./demo_video.mov)**
