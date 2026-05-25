@@ -8,14 +8,14 @@ Mouth breathing can be harmful when it becomes a regular habit because the nose 
 
 This project is built as a lightweight, web-based computer vision application split into a clean client-server architecture:
 
-### Frontend (Client-Side)
+### Frontend
 * **HTML5:** Structures the layout, camera viewport, and dashboard overlay.
 * **JavaScript (ES6+):** Handles real-time video stream capture from the webcam, runs face/mouth tracking algorithms, and manages UI states.
 
-### Backend (Server-Side)
+### Backend
 * **Node.js:** Powers the application server environment.
 
-### How It Works (Architecture)
+### How It Works
 1. **Capture:** The browser requests webcam permission via HTML5/JavaScript.
 2. **Detection:** Client-side JavaScript analyzes the facial/mouth geometry in real time to calculate if the mouth is open.
 3. **Processing/Logging:** The frontend communicates with the Node.js backend to handle server-side configurations or log detection events.
