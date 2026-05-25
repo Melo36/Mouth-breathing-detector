@@ -26,4 +26,8 @@ Made with Claude Code.
 
 # Demo Video
 
-**[View Demo Video](./demo_video.mov)**
+<p align="left">
+  <a href="https://www.youtube.com/watch?v=OZvwEpikUNw">
+    <img src="https://img.youtube.com/vi/OZvwEpikUNw/maxresdefault.jpg" alt="Demo Video" width="70%">
+  </a>
+</p>
